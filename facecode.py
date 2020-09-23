@@ -6,12 +6,10 @@ Created on Tue Sep 22 20:54:05 2020
 """
 
 
-import psutil
 import face_recognition
 import cv2
 import pandas as pd
-import numpy
-import os
+# import os
 
 
 class FaceCapture:
@@ -39,9 +37,9 @@ class FaceCapture:
             df = pd.DataFrame(face_encoding_to_check, columns=["colummn"])
             df.to_csv('user'+str(count)+'.csv', index=False)
             
-        for file in os.listdir('./'):
-                if file.endswith('.png'):
-                    os.remove(file) 
+        # for file in os.listdir('./'):
+        #         if file.endswith('.png'):
+        #             os.remove(file) 
         
         val=True
             ##delete the pic from database keep only csv file

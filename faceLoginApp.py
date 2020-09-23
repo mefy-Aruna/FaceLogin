@@ -7,11 +7,8 @@ Created on Sat Sep 19 14:12:04 2020
 
 """
 
-import psutil
 import face_recognition
 import cv2
-import csv
-import numpy as np
 import pandas as pd
 
 ############### FACE CAPTURE FOR LOGIN #################
