@@ -1,14 +1,7 @@
 
-from flask import Flask, url_for, render_template, flash, request, redirect, session,logging,request
-from flask_sqlalchemy import SQLAlchemy
-import os
-from flask import Flask, flash, redirect, render_template, request, session, abort
+from flask import Flask, url_for, render_template, redirect, session,request
 
-from flask import Flask, render_template, redirect, url_for, session, request
-from flask_socketio import SocketIO, emit
-from flask_login import LoginManager, UserMixin, current_user, login_user, \
-                        login_required, logout_user
-                    
+from flask_socketio import SocketIO
 
 # from flask_session import Session
 
